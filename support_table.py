@@ -5,7 +5,7 @@ import altair as alt
 def minor_table(main_df):
     st.subheader("Podpůrná data")
     st.caption("""Zde je možné pro jednotlivé produkty vidět další detail""")
-    st.selectbox("Vyber produkt", options = main_df["Product Name"].unique())
+    st.selectbox("Vyber produkt", options = main_df["Název produktu"].unique())
 
     competitor_prices = pd.DataFrame({"Competitor": ["Elephant Rouge","Alzaxxx", "Mallý ale šikovný", "Erotic Village", "Hungarian Bazmek"],
                                           "Price": [1000,1090,2000,300,5000 ]})
